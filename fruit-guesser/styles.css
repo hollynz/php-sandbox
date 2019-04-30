@@ -1,0 +1,38 @@
+html {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+}
+
+h1 {
+    color: rgba(102, 43, 4, 0.829);
+    font-size: 5rem;
+}
+
+ul {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.apple {
+    color: rgb(219, 2, 2);
+}
+
+.mango {
+    color: rgb(250, 197, 23);
+}
+
+.banana {
+    color: rgb(247, 231, 8);
+}
+
+.avocado {
+    color: rgb(29, 148, 29);
+}
+
+input {
+    font-size: 1rem;
+}
+
+img {
+    width: 40vw;
+}
