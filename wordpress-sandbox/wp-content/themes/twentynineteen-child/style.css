@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*
+Theme Name: Twenty Nineteen Child
+Template: twentynineteen
+*/
+
+@import url("../twentynineteen/style.css");
+
+.entry .entry-title a, .site .site-title a {
+    color: rgb(145, 0, 0);
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+a, a:visited, .main-navigation .main-menu > li, .main-navigation ul.main-menu > li > a, .post-navigation .post-title, .entry .entry-meta a:hover, .entry .entry-footer a:hover, .entry .entry-content .more-link:hover, .main-navigation .main-menu > li > a + svg, .comment .comment-metadata > a:hover, .comment .comment-metadata .comment-edit-link:hover, #colophon .site-info a:hover, .widget a, .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color), .entry .entry-content > .has-primary-color, .entry .entry-content > *[class^="wp-block-"] .has-primary-color, .entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color, .entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p {
+    color: rgb(145, 0, 0);
+}
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="submit"].search-submit {
+    background: rgb(145, 0, 0);
+    background-color: rgb(145, 0, 0);
+}
