@@ -6,8 +6,9 @@
 if(!function_exists('surfbreak_setup')) :
     function surfbreak_setup() {
         // enqueue styles
-        wp_enqueue_style('surfbreak-style', get_stylesheet_directory_uri() . '/assets/css/style.css');
-        wp_enqueue_style('responsive-nav', get_stylesheet_directory_uri() . '/assets/css/responsive-nav.css');
+        $rand = rand( 1, 99999999999 );
+        wp_enqueue_style('surfbreak-style', get_stylesheet_uri(), '', $rand);
+        wp_enqueue_style('responsive-nav', get_template_directory_uri() . '/assets/css/responsive-nav.css');
         // enqueue scripts
         wp_enqueue_script('surfbreak-main', get_template_directory_uri() . '/assets/js/main.js');
         wp_enqueue_script('responsive-nav', get_template_directory_uri() . '/assets/js/responsive-nav.js');
@@ -23,7 +24,9 @@ if(!function_exists('surfbreak_setup')) :
         ));
         // register menus
         register_nav_menus(array(
-            'primary-menu' => __('Primary')
+            'primary-menu' => __('Primary'),
+            'footer-menu' => __('Footer'),
+            'social-menu' => __('Social')
         ));
     }
 
