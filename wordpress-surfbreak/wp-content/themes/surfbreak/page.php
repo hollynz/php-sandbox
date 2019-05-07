@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1>TEST</h1>
+<h1>TEST page</h1>
 
 <?php
 get_template_part('template-parts/content');

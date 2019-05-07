@@ -1,11 +1,9 @@
-<?php 
-get_header();
-
-?>
+<?php get_header(); ?>
+<h1>test single</h1>
 <div class="columns blog-content">
     <div class="column">
         <?php
-        get_template_part('template-parts/content-excerpt');
+        get_template_part('template-parts/content');
         ?>
     </div>
     <div class="column is-one-third">

@@ -6,6 +6,7 @@ Version: 1.0.0
 
 html {
     scroll-behavior: smooth;
+    background: black;
   }
   
   body {
@@ -400,3 +401,7 @@ html {
     right: 4%;
   }
   /*# sourceMappingURL=main.css.map */
+
+  .blog-content {
+    align-items: flex-start;
+  }
