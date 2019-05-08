@@ -1,9 +1,8 @@
 <?php get_header(); ?>
-<h1>test single</h1>
 <div class="columns blog-content">
     <div class="column">
         <?php
-        get_template_part('template-parts/content');
+        get_template_part('template-parts/content-single');
         ?>
     </div>
     <div class="column is-one-third">
@@ -13,5 +12,5 @@
     </div>
 </div>
 <?php
-get_footer(); 
+get_footer();
 ?>

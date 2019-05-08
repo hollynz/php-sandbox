@@ -19,9 +19,16 @@
                 'container' => false
             )); ?>
         </nav>
-        <section>
+        <?php 
+        if(is_front_page()) : ?>
             <div>
                 <?php the_custom_logo(); ?>
             </div>
-        </section>
+        <?php endif; ?>
+        <?php if(is_page('contact')) : ?>
+        <h1>I am the contact</h1>
+        <?php endif; ?>
+        <?php if(is_home()) : ?>
+        <h1>I am the home</h1>
+        <?php endif; ?>
     </header>
