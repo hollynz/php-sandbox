@@ -44,40 +44,8 @@ if(!function_exists('surfbreak_enqueue_scripts')) :
 endif;
 add_action('wp_enqueue_scripts', 'surfbreak_enqueue_scripts');
 
-if(!function_exists('surfbreak_widgets_init')) :
-    function surfbreak_widgets_init()
-    {
-        register_sidebar(array(
-            'name'          => __( 'Sidebar', 'theme_text_domain' ),
-            'id'            => 'sidebar-1',
-            'description'   => 'Add widgets here'
-        ));
-    }
-endif;
-add_action('widgets_init', 'surfbreak_widgets_init');
 
-if(!function_exists('surfbreak_create_post_types')) :
-    function surfbreak_create_post_types()
-    {
-        register_post_type(
-            'surfbreak-regions',
-            array(
-                'labels' => array(
-                    'name' => __('Regions'),
-                    'singular_name' => __('Region')
-                ),
-                'public' => true,
-                'has_archive' => true,
-                'menu_position' => 5,
-                'supports' => array(
-                    'title',
-                    'editor',
-                    'thumbnail'
-                )
-            )
-        );
-    }
-endif;
-add_action('init', 'surfbreak_create_post_types');
-
- ?>
+require_once get_template_directory() . '/inc/widgets.php';
+require_once get_template_directory() . '/inc/custom-post-types.php';
+require_once get_template_directory() . '/inc/taxonomies.php';
+require_once get_template_directory() . '/inc/custom-meta-boxes.php';

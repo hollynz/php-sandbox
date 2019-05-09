@@ -107,6 +107,7 @@ html {
   }
   
   .navbar {
+    background: none;
     position: fixed;
     top: 0;
     -webkit-transition: top 0.8s ease, background 0.8s ease;
@@ -404,4 +405,9 @@ html {
 
   .blog-content {
     align-items: flex-start;
+  }
+
+  .nav-collapse {
+    z-index: 100;
+    width: 200px;
   }
