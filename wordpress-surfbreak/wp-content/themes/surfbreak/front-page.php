@@ -48,7 +48,18 @@
                         <div class="has-text-right">
                             <a href="#">
                                 <figure class="figure">
-                                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/_DSC5857.jpg" alt="Video">
+                                <?php
+                                    $mission_image = get_theme_mod('surfbreak_our_mission_image_setting');
+                                    var_dump($mission_image);
+                                    if($mission_image) : ?>
+                                        <img src="<?php echo $mission_image; ?>" alt="Our Mission Image">
+                                <?php
+                                    else :
+                                    ?>
+                                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/DSC5857.jpg" alt="Our Mission Image">
+                                <?php
+                                    endif;
+                                ?>
                                 </figure>
                             </a>
                             <a href="index.html" class="view-gallery">View Gallery ></a>
