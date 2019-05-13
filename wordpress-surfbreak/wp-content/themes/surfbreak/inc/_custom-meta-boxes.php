@@ -18,7 +18,7 @@ function surfbreak_add_post_meta_boxes() {
       'surfbreak-post-class',      // Unique ID
       esc_html__( 'Post Class', 'example' ),    // Title
       'surfbreak_post_class_meta_box',   // Callback function
-      'surfbreak-regions',         // Admin page (or post type)
+      'surfbreak-surfbreaks',         // Admin page (or post type)
       'side',         // Context
       'default'         // Priority
     );
@@ -97,3 +97,12 @@ function surfbreak_post_class( $classes ) {
 /* Fire our meta box setup function on the post editor screen. */
 add_action( 'load-post.php', 'surfbreak_post_meta_boxes_setup' );
 add_action( 'load-post-new.php', 'surfbreak_post_meta_boxes_setup' );
+
+/**
+ * Remove the additional CSS section, introduced in 4.7, from the Customizer.
+ * @param $wp_customize WP_Customize_Manager
+ */
+function surfbreak_remove_css_section( $wp_customize ) {
+  $wp_customize->remove_section( 'custom_css' );
+}
+add_action( 'customize_register', 'surfbreak_remove_css_section', 15 );

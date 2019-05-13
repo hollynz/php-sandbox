@@ -50,7 +50,6 @@
                                 <figure class="figure">
                                 <?php
                                     $mission_image = get_theme_mod('surfbreak_our_mission_image_setting');
-                                    var_dump($mission_image);
                                     if($mission_image) : ?>
                                         <img src="<?php echo $mission_image; ?>" alt="Our Mission Image">
                                 <?php

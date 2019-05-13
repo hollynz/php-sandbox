@@ -70,6 +70,8 @@
                 <?php the_custom_logo(); ?>
             </div>
         <?php endif; ?>
+
+        <!-- Testing the boolean page stuff -->
         <?php if(is_page('contact')) : ?>
         <h1>I am the contact</h1>
         <?php endif; ?>

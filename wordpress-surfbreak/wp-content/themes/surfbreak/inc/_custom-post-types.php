@@ -2,11 +2,11 @@
     function surfbreak_create_post_types()
     {
         register_post_type(
-            'surfbreak-regions',
+            'surfbreak-surfbreaks',
             array(
                 'labels' => array(
-                    'name' => __('Regions'),
-                    'singular_name' => __('Region')
+                    'name' => __('Surfbreaks'),
+                    'singular_name' => __('Surfbreak')
                 ),
                 'public' => true,
                 'has_archive' => true,
