@@ -19,7 +19,7 @@
                             <a class="navbar-item" href="<?php echo site_url() ?>">
                                 <img src="<?php bloginfo('template_directory'); ?>/assets/img/logo.png" alt="Surfbreak Protection Society">
                             </a>
-                            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span id="burger" class="navbar-burger burger" data-target="navbarMenuHeroA">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -27,42 +27,18 @@
                         </div>
                         <div id="navbarMenuHeroA" class="navbar-menu">
                             <div class="navbar-end">
-                                <a class="navbar-item page-link">
-                                    ABOUT US
-                                </a>
-                                <a class="navbar-item page-link">
-                                    REGIONS
-                                </a>
-                                <a class="navbar-item page-link">
-                                    NEWS
-                                </a>
-                                <a class="navbar-item page-link">
-                                    EVENTS
-                                </a>
-                                <a class="navbar-item page-link">
-                                    MERCHANDISE
-                                </a>
-                                <a class="navbar-item page-link">
-                                    CONTACT US
-                                </a>
-                                <span class="navbar-item">
-                                    <a class="button is-primary" href="index.html">
-                                        <span>DONATE</span>
-                                    </a>
-                                </span>
+                                <?php wp_nav_menu(array(
+                                    'menu_class' => false,
+                                    'theme_location' => 'primary-menu',
+                                    'container' => false
+                                )); ?>
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
 
-        <div class="nav-collapse">
-            <?php wp_nav_menu(array(
-                'menu_class' => false,
-                'theme_location' => 'primary-menu',
-                'container' => false
-            )); ?>
-        </div>
+        
 
         <?php 
         if(is_front_page()) : ?>

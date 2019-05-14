@@ -64,13 +64,35 @@ html {
   .navbar-brand img {
     max-height: 4rem;
   }
-  
-  .navbar-item, .navbar-link {
-    color: #fff;
-    font-family: 'Architects Daughter', cursive;
+
+  .navbar-menu {
+    background: none;
   }
   
-  a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+  .navbar-end {
+    font-size: 1.6rem;
+    font-family: 'Architects Daughter', cursive;
+    width: 100%;
+  }
+
+  #menu-primary {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu-primary.is-responding {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .menu-item a {
+    color: #fff;
+  }
+
+  .menu-item a:hover,  .menu-item a:active {
     background: none;
     color: #00d1b2;
   }
