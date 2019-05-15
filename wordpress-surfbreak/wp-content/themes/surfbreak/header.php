@@ -39,19 +39,24 @@
             </div>
 
         
-
+        <!-- Testing the boolean page stuff -->
         <?php 
-        if(is_front_page()) : ?>
+        if(is_front_page()) : 
+        ?>
             <div>
                 <?php the_custom_logo(); ?>
             </div>
         <?php endif; ?>
 
-        <!-- Testing the boolean page stuff -->
+        <?php
+        if(!is_front_page()) : 
+
+        endif; ?>
+
         <?php if(is_page('contact')) : ?>
-        <h1>I am the contact</h1>
+        <!-- do something! -->
         <?php endif; ?>
-        <?php if(is_home()) : ?>
+        <!-- < ?php if(is_home()) : ?>
         <h1>I am the home</h1>
-        <?php endif; ?>
+        < ?php endif; ?> -->
     </header>

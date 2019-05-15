@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="page-content">
 <?php
 get_template_part('template-parts/content');
 $args = array(
@@ -15,5 +16,8 @@ while($loop->have_posts()) :
 <?php
 endwhile;
 endif;
+?>
+</div>
+<?php
 get_footer(); 
 ?>

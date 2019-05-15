@@ -2,6 +2,7 @@
 get_header();
 
 ?>
+<div class="page-content">
 <div class="columns blog-content">
     <div class="column">
         <?php
@@ -13,6 +14,7 @@ get_header();
         get_sidebar();
         ?>
     </div>
+</div>
 </div>
 <?php
 get_footer(); 

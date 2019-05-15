@@ -4,6 +4,25 @@ Author: Holly Johnson
 Version: 1.0.0
 */
 
+/* some of the wordpress styling */
+.entry-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+}
+.page-content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+
 html {
     scroll-behavior: smooth;
     background: black;
@@ -92,7 +111,7 @@ html {
     color: #fff;
   }
 
-  .menu-item a:hover,  .menu-item a:active {
+  .menu-item a:hover,  .menu-item a.is-active {
     background: none;
     color: #00d1b2;
   }
